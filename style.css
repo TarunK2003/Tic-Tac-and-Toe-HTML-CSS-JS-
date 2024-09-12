@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    background-color: black;
+    color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    text-decoration: none;
+    font-family: monument;
+    padding: 25px 20px;
+    font-size: 3vh;
+}
+nav span{
+    color: red;
+}
+.game-container{
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 11vw);
+    padding-top: 7px;    
+}
+.box{
+    font-family: monument;
+    font-size: 8vw;
+    font-weight: 500;
+    border: 2px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box:hover{
+    background-color: red;
+}
+.game-info{
+    padding: 0px 35px;
+    font-family: monument;
+    font-weight: 200;
+}
+.game-info .head{
+    color: red;
+}
+.imagebox img{
+    width: 0;
+    transition: width is ease-in-out 2s;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    padding: 5px 20px;
+    font-family: monument;
+    font-size: 1vw;
+    font-weight: 300;
+    border-radius: 50px;
+}
+#reset:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.line{
+    height: 3px;
+    width: 30vw;
+    background-color: black;
+    position: absolute;
+}
+
+@media screen and (max-width: 800px)
+{
+    .game-container{
+        flex-wrap: wrap;
+    }
+    .game-info{
+        margin-top: 40px;
+    }
+    .game-info h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
